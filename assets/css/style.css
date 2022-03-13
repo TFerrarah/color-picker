@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fe0202;
+}
+
+h1 {
+  font-family: "Russo One", sans-serif;
+  color: white;
+  font-size: 72px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-family: "Russo One", sans-serif;
+  color: white;
+  font-size: 22px;
+  margin-bottom: 31px;
+}
+
+/* checkbox styling */
+form div.colors {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.colors input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 25%;
+    background: #fff;
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #F87DA9;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 25%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
