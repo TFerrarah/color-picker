@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Russo One';
 }
 
 :root {
@@ -41,12 +42,21 @@ h3 {
   margin-bottom: 31px;
 }
 
-/* checkbox styling */
+/* form styling */
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 form div.colors {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
+
+/* custom radio button */
 
 .colors input{
   appearance: none; /* hide default checkbox */
@@ -97,6 +107,34 @@ form div.colors {
   background-color: var(--lime);
 }
 
-.radioBtn.checked{
-  border: 3px solid black;
+/* text input */
+
+.hexInput{
+  display: flex;
+  flex-direction: row;
+  height: 52px;
+  gap: 10px;
+}
+
+.hexInput input[type="text"] {
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 1.125rem;
+  flex-grow: 3.5;
+}
+
+.hexInput input[type="text"]::placeholder{
+  color: #C1C1C1;
+}
+
+
+.hexInput button[type="submit"]{
+  color: black;
+  background: #8BFFC7;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  flex-grow: 1;
 }
