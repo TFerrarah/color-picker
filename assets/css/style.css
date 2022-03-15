@@ -49,10 +49,10 @@ form div.colors {
 }
 
 .colors input{
-  appearance: none;
+  appearance: none; /* hide default checkbox */
 }
 
-.colors .radioBtn{
+.colors input{
   height: 3.75rem;
   width: 3.75rem;
   background-color: white;
@@ -60,15 +60,41 @@ form div.colors {
   border-radius: 15%;
 
   padding: .25rem;
-  
 }
 
-.colors .radioBtn::after{
+.colors input::before{
   content: '';
   height: 100%;
-  background-color: var(--red);
   display: block;
   border-radius: 15%;
+}
+
+.colors input:checked{
+  border: 3px solid black;
+}
+
+#red::before{
+  background-color: var(--red);
+}
+
+#teal::before{
+  background-color: var(--teal);
+}
+
+#blue::before{
+  background-color: var(--blue);
+}
+
+#green::before{
+  background-color: var(--green);
+}
+
+#purple::before{
+  background-color: var(--purple);
+}
+
+#lime::before{
+  background-color: var(--lime);
 }
 
 .radioBtn.checked{
