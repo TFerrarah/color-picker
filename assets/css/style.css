@@ -4,16 +4,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Russo One';
+  font-family: "Russo One";
 }
 
 :root {
   --red: #fe0202;
-  --teal: #59BC98;
-  --blue: #2594D2;
-  --green: #72BC59;
-  --purple: #BC59A0;
-  --lime: #DCF73C;
+  --teal: #59bc98;
+  --blue: #2594d2;
+  --green: #72bc59;
+  --purple: #bc59a0;
+  --lime: #dcf73c;
 }
 
 body {
@@ -44,7 +44,7 @@ h3 {
 
 /* form styling */
 
-form{
+form {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -57,59 +57,55 @@ form div.colors {
 }
 
 /* custom radio button */
-
-.colors input{
+.colors input {
   appearance: none; /* hide default checkbox */
-}
-
-.colors input{
   height: 3.75rem;
   width: 3.75rem;
   background-color: white;
   border: 1px solid black;
   border-radius: 15%;
 
-  padding: .25rem;
+  padding: 0.25rem;
 }
 
-.colors input::before{
-  content: '';
+.colors input::before {
+  content: "";
   height: 100%;
   display: block;
   border-radius: 15%;
 }
 
-.colors input:checked{
+.colors input:checked {
   border: 3px solid black;
 }
 
-#red::before{
+#red::before {
   background-color: var(--red);
 }
 
-#teal::before{
+#teal::before {
   background-color: var(--teal);
 }
 
-#blue::before{
+#blue::before {
   background-color: var(--blue);
 }
 
-#green::before{
+#green::before {
   background-color: var(--green);
 }
 
-#purple::before{
+#purple::before {
   background-color: var(--purple);
 }
 
-#lime::before{
+#lime::before {
   background-color: var(--lime);
 }
 
 /* text input */
 
-.hexInput{
+.hexInput {
   display: flex;
   flex-direction: row;
   height: 52px;
@@ -125,14 +121,13 @@ form div.colors {
   flex-grow: 3.5;
 }
 
-.hexInput input[type="text"]::placeholder{
-  color: #C1C1C1;
+.hexInput input[type="text"]::placeholder {
+  color: #c1c1c1;
 }
 
-
-.hexInput button[type="submit"]{
+.hexInput button[type="submit"] {
   color: black;
-  background: #8BFFC7;
+  background: #8bffc7;
   border: none;
   border-radius: 5px;
   font-size: 1.125rem;
